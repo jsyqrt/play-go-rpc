@@ -39,7 +39,7 @@ func Request() {
 	}
 
 	var reply string
-	err = client.Call("HelloService.Hello", "hello, it's mayuko", &reply)
+	err = client.Call("HelloService.Hello", "mayuko", &reply)
 	if err != nil {
 		log.Fatal(err)
 	}
